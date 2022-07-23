@@ -347,4 +347,4 @@ Q: What is the difference between data table and scenario outline?
     - We cannot create SCENARIO OUTLINE/TEMPLATE without providing an "Examples" table.
     - But, we can use "data tables" without having to use "examples"
 
-    - Scenario Outline and Scenario Template are the same thing. Just alternative keyword.
+    - Scenario Outline and Scenario Template are the same thing. Just alternative keyword
