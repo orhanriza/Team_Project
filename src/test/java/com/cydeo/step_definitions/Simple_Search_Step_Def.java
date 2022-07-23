@@ -13,6 +13,7 @@ public class Simple_Search_Step_Def {
         Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get("http://etsy.com");
+
     }
     @When("I search for {string}")
     public void i_search_for(String string) {
