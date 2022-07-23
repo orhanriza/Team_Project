@@ -12,10 +12,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt" ,
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber"
         },
-        features = "src/test/resources/features" ,
+        features = "src/test/java/resources/features" ,
         glue = "com/cydeo/step_definitions",
         dryRun = true,
-        tags = ""
+        tags = "@smoke"
 )
 public class CukesRunner {
 }
