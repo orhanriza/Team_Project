@@ -4,6 +4,8 @@ import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,8 +18,8 @@ public class Simple_Search_Step_Def {
 
     }
     @When("I search for {string}")
-    public void i_search_for(String string) {
-
+    public void i_search_for(String search) {
+        Driver.getDriver().findElement(By.cssSelector("[id*='search-query']")).sendKeys(search + Keys.ENTER);
     }
     @Then("I should see the results")
     public void i_should_see_the_results() {
